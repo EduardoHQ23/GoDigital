@@ -1,0 +1,453 @@
+
+/*=============================================
+=            INDEX PRINCIPAL            =
+=============================================*/
+@media only screen and (max-width:1000px){
+		.contenedor{
+			max-width: 650px;
+		}
+				.textos1 p, .textos2 p{
+					font-size: 18px;
+				}
+				.textos1 h3, .textos2 h3 {
+					font-size: 25px;
+				}
+				.titulo h1, .titulo h2 {
+					font-size: 25px;
+				}
+				.titulo p{
+					font-size: 14px;
+				}
+		.servicios{
+			grid-gap: 50px 0;
+		}
+		.servicios-total,
+		.sitios-web,
+		.correo-corporativo,
+		.facturacion-electronica{
+
+			max-width: 800px;
+			min-width: 600px;
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+				.dos,.tres{
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 1fr 1fr;
+				}
+				.uno span, .cuatro span {
+					font-size: 15px;
+				}
+				.dos figcaption, .tres figcaption{
+					font-size: 15px;
+				}
+				.uno img, .cuatro img {
+					width: 60px;
+					height: 70px;
+				}
+				.tres span{
+					font-size: 15px;
+				}
+
+			.sitios-texto{
+			margin: 0;
+			padding: 40px;
+			}
+			.contenido-sitios span {
+				font-size: 13px;
+			}
+			.sitios-texto h2{
+				font-size: 18px;
+			}
+			.sitios-img img{
+				width: 100%;
+			}
+.boton{
+	padding: 13px;
+	background: white;
+	color: #10aac1;
+}
+.sitios-texto:hover + div {
+    transform: translateX(-5%);
+}
+			.correo-img{
+				width: auto;				
+			}
+			.correo-texto{
+				padding: 30px;
+				margin: 10px -25px;
+			}
+			.correo-texto h2{
+				font-size: 18px;
+			}
+.contenido-correo:hover div:nth-child(1) {
+    transform: translateX(18%);
+}.contenido-correo:hover div:nth-child(3) {
+    transform: translateX(-20%);
+}
+		.flecha figure{
+		display: block;
+		}	
+		.flecha figure img{
+			display: none;
+		}
+		.check h3{
+			font-size: 15px;
+		}
+		.sistema h3:after,.tradicional h3:after{
+			opacity: 1;
+			left: 20px;
+		}
+		.boton-factura{
+			font-size: 15px;
+		}
+	footer{
+		min-width: 600px;
+		grid-gap: 20px;
+		grid-template-columns: repeat(4,1fr);
+	}
+		.footer h4{
+			font-size: 14px;
+		}
+		.footer a{
+			font-size: 12px;
+		}
+		.seccion1{
+			grid-column: 1/2;
+		}
+		.footer-final{
+			grid-column: 1/5;
+		}
+		.hamburguer{
+	display: block;
+}
+    .enlaces-header {
+        position: fixed;
+        background: #0c8192;
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        z-index: -1;
+    }  
+    .enlaces-header > ul{
+	position: absolute;
+	top: 20%;
+} 
+     .nav .menudos {
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }.enlaces-header ul li:nth-child(2) ul{
+    	display: block;
+    }
+    .enlaces-header ul li:nth-child(2) ul{
+    	background: transparent;
+    }
+
+
+ .enlaces-header ul li:hover > a {
+ 	color: white;
+ }
+ .enlaces-header ul li:nth-child(2) ul,
+  .enlaces-header ul li:nth-child(2):hover ul{
+  	background: transparent;
+ }
+}
+/************************************/
+@media only screen and (max-width:600px){
+		.contenedor{
+			max-width: 420px;
+		}
+		.titulo{
+			margin-bottom: 25px;
+		}
+		.contenido-header{
+			grid-gap: 30px 0;
+			height: 300px;
+		}
+		.contenido-header img:nth-child(1){
+			width: 80%;
+			grid-column: 1/3;
+		}
+				.textos1 p, .textos2 p{
+					font-size: 12px;
+				}
+				.textos1 h3, .textos2 h3 {
+					font-size: 15px;
+				}
+				.titulo h1, .titulo h2 {
+					font-size: 15px;
+				}
+				.titulo p{
+					font-size: 12px;
+				}
+		.servicios{
+			grid-gap: 20px 0;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto 1fr;
+		}
+		.servicios-total,
+		.sitios-web,
+		.correo-corporativo,
+		.facturacion-electronica{
+
+			max-width: 420px;
+			min-width: 350px;
+			margin-top: 0;
+			margin-bottom: 50px;
+		}
+				.uno{
+					grid-template-columns: 1fr .5fr;
+					grid-column: 1/2
+					grid-row:2/3;
+					grid-gap: 0 10px;
+				}
+				.dos,.tres{
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: auto;
+					margin: auto;
+					padding: 40px;
+					grid-gap: 30px;
+					grid-column: 1/2;
+					grid-row: 2/3;
+				}
+				.uno span, .cuatro span {
+					font-size: 15px;
+					justify-self: end;
+					align-self: center;
+				}
+				.dos figcaption, .tres figcaption{
+					font-size: 12px;
+				}
+				.uno img, .cuatro img {
+					width: 30px;
+					height: 40px;
+					align-self: start;
+					justify-self: start;
+				}
+				.tres span{
+					font-size: 15px;
+				}
+				.tres,.cuatro{
+					display: none;
+				}
+				.dos img, .tres img{
+					width: 100px;
+				}
+
+			.sitios-texto{
+			margin: 0;
+			padding: 20px;
+			margin: 0 -25px 0 25px;
+			}
+			.sittios-texto br{
+				display: none;
+			}
+			.contenido-sitios span {
+				font-size: 10px;
+			}
+			.sitios-texto h2{
+				font-size: 14px;
+				line-height: 25px;
+			}
+			.sitios-img img{
+				width: 100%;
+			}
+.titulo-imagen img{
+	width: 100px;
+}
+.boton{
+	padding: 13px;
+	background: white;
+	color: #10aac1;
+}
+.btn-posicion{
+	top: 0px;
+left: 9%;
+margin-top: 4px;
+font-size: 10px;
+padding: 8px;
+}
+.sitios-texto:hover + div {
+    transform: translateX(-10%);
+}
+			.correo-img{
+				width: auto;				
+			}
+			.correo-texto{
+				padding: 10px 20px;
+				margin: 10px -25px;
+			}
+			.correo-texto h2{
+				font-size: 12px;
+				line-height: 25px;
+			}
+.contenido-correo:hover div:nth-child(1) {
+    transform: translateX(18%);
+}.contenido-correo:hover div:nth-child(3) {
+    transform: translateX(-20%);
+}
+.contenedor-facturacion{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr auto 1fr auto;
+	grid-gap: 20px 0;
+}
+
+.tradicional{
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+.sistema{
+	grid-column: 1/3;
+	grid-row: 4/5;
+}
+.d{
+	grid-column: 1/3;
+	grid-row: 1/2;
+}
+.i{
+	grid-column: 1/3;
+	grid-row: 3/4;
+}
+		.flecha figure{
+		display: block;
+		}	
+		.flecha figure img{
+			display: none;
+		}
+		.check h3{
+			font-size: 13px;
+		}
+		.flecha figure figcaption{
+			font-size: 15px;
+		}
+		.sistema h3:after,.tradicional h3:after{
+			opacity: 1;
+			left: 20px;
+			/*display: none;*/
+		}
+		.boton-factura{
+			font-size: 15px;
+			margin: auto;
+			grid-row: 5/6;
+			grid-column: 1/3;
+		}
+
+.imagen-tradicional, .imagen-sistema{
+	display: none;
+}
+	footer{
+		min-width: 350px;
+		grid-gap: 20px;
+		grid-template-columns: repeat(3,1fr);
+	}
+	.seccion1{
+		display: none;
+	}
+		.footer h4{
+			font-size: 12px;
+			line-height: 20px;
+			margin-bottom: 25px;
+		}
+		.footer a{
+			font-size: 12px;
+		}
+		.seccion1{
+			grid-column: 1/2;
+		}
+		.footer-final{
+			grid-column: 1/5;
+			font-size: 11px;
+		}
+		.redes-sociales{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: -25px;
+		}
+		.redes-sociales a:nth-child(1), 
+		.redes-sociales a:nth-child(2), 
+		.redes-sociales a:nth-child(3), 
+		.redes-sociales a:nth-child(4){
+			font-size: 15px;
+		}
+.btn-whatsapp{
+	width: 45px !important;
+	height: 45px !important;
+	bottom: 30px !important	;
+}
+.chat-messenger{
+	display: none;
+}
+header:before {
+	margin-bottom: 60px;
+}
+nav, .nav{
+	height: 60px;
+}
+.nav .logo{
+	height: 25px;
+}
+.enlaces-header{
+	display: none;
+}
+		.hamburguer{
+	display: block;
+}
+    .enlaces-header {
+        position: fixed;
+        background: #0c8192;
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+        z-index: -1;
+    }   
+.enlaces-header > ul{
+	position: absolute;
+	top: 10%;
+}
+     .nav .menudos {
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+
+    .nav .enlaces-header a {
+        color: #fff;
+    }.enlaces-header ul li:nth-child(2) ul{
+    	display: block;
+    }
+    .enlaces-header ul li:nth-child(2) ul{
+    	background: transparent;
+    }
+}
+@media only screen and (min-width:416px){
+		.redes-sociales{
+			margin-top: 25px;
+		}
+}
+/*=====  End of INDEX PRINCIPAL  ======*/
+
+/*========================================
+ =            sitios web            =
+ ========================================*/
+ 
+
+ /*=====  End of sitios web ======*/
+  

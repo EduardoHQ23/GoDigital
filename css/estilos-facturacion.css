@@ -1,0 +1,561 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.facturacion-section1{
+	/*background: #10aac1;*/
+}
+.header-facturacion{
+	max-width: 1000px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 90vh;
+	width: 90%;
+}
+		.contenido-header-facturacion{
+			padding-top: 35%;
+			text-align: center;
+			animation:bounceInLeft 1.3s;
+
+		}
+				.contenido-header-facturacion h3{
+					color: white;
+					font-size:60px ;
+					margin-bottom: 30px;
+				}
+				.contenido-header-facturacion h2{
+					color: #ffffffa3;
+					font-weight: 300;
+					font-size: 30px;
+					line-height: 50px;
+					margin-bottom: 50px;
+				}
+				.btn{
+					text-decoration: none;
+					color: #10aac1;
+					background: white;
+					padding: 15px 20px;
+					border-radius: 20px;	
+					transition: .3s;					
+				}
+				.btn:hover{
+					font-size: 18px;
+				}
+				.btn:hover i{
+					animation:rotar-facturacion 1s alternate;					
+				}
+
+@keyframes rotar-facturacion{
+			0%{transform: rotate(0deg);}
+			20%{transform: rotate(10deg);}
+			40%{transform: rotate(-15deg);}
+			60%{transform: rotate(15deg);}
+			80%{transform: rotate(-10deg);}
+			100%{transform: rotate(0deg);}
+}
+
+
+		.imagen-header-facturacion{
+			    width: 495px;
+			    text-align: left;
+			    align-self: center;
+			    justify-self: end;
+
+		}
+				.imagen-header-facturacion img{
+					width: 100%;
+					text-align: right;
+					position: relative;
+					top: -121px;
+					animation: aparecer 1.3s;
+				}
+@keyframes aparecer{
+	0%{transform: scale(0);}
+	100%{transform: scale(1);}
+}
+
+/*****SECTIOIN 2*******/
+
+.facturacion-section2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0 100px;
+	max-width: 1000px;
+	margin: auto;
+}
+.facturacion-section2:hover img{
+	transform: scale(1.1);
+}
+		.imagen-facturacion-electronica img{
+			width: 100%;
+	transition: 1s;
+}
+				.texto-main h3{
+					color: #0c8192;
+					font-weight: 300;
+					margin-bottom: 30px;
+					font-size: 20px;
+				}
+				.texto-main h2{
+					margin-bottom: 40px;
+					color: #004a72;	
+					font-weight: normal;
+					font-size: 40px;
+				}
+/*=============================================
+=            SECTION3           =
+=============================================*/
+
+.facturacion-section3{
+	background: #0c8192;
+	padding: 50px 0 80px 0;
+	text-align: center;
+}
+
+.facturacion-section3-titulo{
+	max-width: 1000px;
+	margin: auto;
+}
+		.facturacion-section3-titulo h2:nth-child(1){
+			color: white;
+			font-weight: 300;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+		.facturacion-section3-titulo h2:nth-child(2){
+			color: white;
+			font-size: 35px;
+			margin-bottom: 20px;
+		}
+.facturacion-section3-iconos{
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	margin: auto;
+	margin-top: 50px;
+	padding: 18px;
+}
+		.section3{
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 4px 3px 3px 3px rgb(0 0 0 / 38%);
+			transition: .3s;
+		}
+		.section3:hover{
+			transform: scale(1.05);
+		}
+				.section3 h2{
+					color: #004a72;
+					margin-bottom: 25px;
+				}	
+				.section3 h3{
+					color: #004a72;
+					font-weight: 300;
+					margin-top: 10px;
+					font-size: 16px;
+				}
+				.section3 img{
+					border-radius: 50%;
+					background: #0c8192;
+					width: 50%;
+				}
+
+
+/*=====  End of Section comment block  ======*/
+
+/*=============================================
+=            SECTION 4         =
+=============================================*/
+
+.facturacion-section4-titulo,
+.correo-section3-titulo,
+.sitios-section3-titulo{
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+		.facturacion-section4-titulo h2:nth-child(1),
+		.correo-section3-titulo h2:nth-child(1),
+		.sitios-section3-titulo h2:nth-child(1){
+			color: #10aac1;
+			font-size: 25px;
+			font-weight: 300;
+			margin-bottom: 15px;
+		}
+		.facturacion-section4-titulo h2:nth-child(2),
+		.correo-section3-titulo h2:nth-child(2),
+		.sitios-section3-titulo h2:nth-child(2){
+			color: #004a72;
+			font-size: 35px;
+			margin-bottom: 50px;
+		}
+.facturacion-section4-planes,
+.correo-section3-planes,
+.sitios-section3-planes{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	grid-gap: 25px;
+	max-width: 1000px;
+	min-width: 925px;
+	margin: auto;
+}
+
+.facturacion-section4-planes .plan,
+.correo-section3-planes .plan,
+.sitios-section3-planes .plan{
+	padding: 2rem;
+	border-radius: 8px;
+	border-top: 6px solid #10aac1;
+	color: #004a72;
+	margin-top: 20px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.30);
+	overflow: hidden;
+/*padding-bottom: 70px;*/
+
+}
+.correo-section3-planes .plan{
+	margin-top: 0;
+}
+
+.facturacion-section4-planes .plan .close-red,
+.correo-section3-planes .plan .close-red,
+.sitios-section3-planes .plan .close-red{
+	color: #c11052;
+}
+.facturacion-section4-planes .liston,
+.correo-section3-planes .liston,
+.sitios-section3-planes .liston{
+	background: #10aac1;
+	color: white;
+	margin-left: -80px;
+	width: 200px;
+	transform: rotate(-45deg);
+	display: grid;
+	grid-template-columns: .6fr 1fr;
+	text-align: left;
+	grid-gap: 10px;
+}
+
+.facturacion-section4-planes .plan-nombre,
+.correo-section3-planes .plan-nombre,
+.sitios-section3-planes .plan-nombre{
+	line-height: 4rem;
+	background: #10aac1;
+	width: 190px;
+	margin: auto;
+	border-radius: 8px;
+	color: white;
+	text-transform: uppercase;
+
+}
+.facturacion-section4-planes span,
+.correo-section3-planes span,
+.sitios-section3-planes span{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	line-height: 5rem;
+	color: #004a72;
+	margin-bottom: 10px;
+
+}
+.facturacion-section4-planes span h3,
+.correo-section3-planes span h3,
+.sitios-section3-planes span h3{
+	text-align: right;
+	font-size: 40px;
+	
+}
+.facturacion-section4-planes span p,
+.correo-section3-planes span p,
+.sitios-section3-planes span p{
+	text-align: center;
+
+}
+.facturacion-section4-planes .plan .comentario,
+.correo-section3-planes .plan .comentario,
+.sitios-section3-planes .plan .comentario{
+	font-size: 12px;
+	font-style: italic;
+	line-height: 20px;
+	border-top: 1.5px solid #004a727a;
+	padding: 20px 10px;
+	color: #004a72;
+
+}
+.facturacion-section4-planes ul,
+.correo-section3-planes ul,
+.sitios-section3-planes ul{
+	list-style-type: none;
+
+}
+.facturacion-section4-planes ul li,
+.correo-section3-planes ul li,
+.sitios-section3-planes ul li{
+	font-size: 13px;
+	padding: 5px 0;
+	line-height: 20px;
+	border-bottom: 1px solid silver;
+}
+.facturacion-section4-planes .negocio,
+.correo-section3-planes .negocio,
+.sitios-section3-planes .negocio{
+	margin-top: 0px;
+	transition: .3s;
+}
+.facturacion-section4-planes .negocio:hover,
+.correo-section3-planes .negocio:hover,
+.sitios-section3-planes .negocio:hover,
+.facturacion-section4-planes .basico:hover,
+.correo-section3-planes .basico:hover,
+.sitios-section3-planes .basico:hover,
+.facturacion-section4-planes .avanzado:hover,
+.correo-section3-planes .avanzado:hover,
+.sitios-section3-planes .avanzado:hover{
+		box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+.facturacion-section4-planes .negocio:hover .liston:before,
+.correo-section3-planes .negocio:hover .liston:before,
+.sitios-section3-planes .negocio:hover .liston:before{
+	transform: scale(1.5) rotate(360deg);
+}
+
+.liston:before{
+	content: url("../img/facturacion/check-blanco.png");
+	text-align: right;width: 20px;
+position: relative;
+left: 50px;
+transition: all .3s;
+}
+
+
+.boton{
+	margin-top: 20px;
+border-radius: 20px;
+background: #10AAC1;
+padding: 10px 15px;
+top: 15px;
+position: relative;
+border: 1px solid white;
+color: white;
+cursor: pointer;
+transition: .3s;
+}
+.boton:hover{
+	background: white;
+	color: #10AAC1;
+}	
+.fac{
+	display: inline-block;
+	margin-top: 25px;
+	background: #10aac1;
+	color: white;
+	font-size: 14px;
+	cursor: pointer;
+}	
+.fac:hover{
+	font-size: 14px;
+	background: #004a72;
+}
+
+.facturacion-section4-planes .basico,
+.correo-section3-planes .basico,
+.sitios-section3-planes .basico{
+	border-top: 6px solid #c18010;
+}
+.basico .plan-nombre{
+	background: #c18010;
+}
+.basico a{
+	background: #c18010;
+}
+.basico a:hover{
+	background: #956615;
+}
+
+.facturacion-section4-planes .avanzado,
+.correo-section3-planes .avanzado,
+.sitios-section3-planes .avanzado{
+	border-top: 6px solid #c11052;
+}
+.avanzado .plan-nombre{
+	background: #c11052;
+}
+.avanzado a{
+	background: #c11052;
+}
+.avanzado a:hover{
+	background: #8e2049;
+}
+/*=====  End of Section comment block  ======*/
+/*=============================================
+=            Section comment block            =
+=============================================*/
+@media only screen and (max-width:1000px){
+
+	.facturacion-section4-planes,
+	.correo-section3-planes,
+	.sitios-section3-planes{
+	grid-template-columns: 1fr 1fr;
+	max-width: 700px;
+	min-width: 600px;
+	margin: auto;
+	grid-template-areas: 
+	"basico negocio"
+	"avanzado avanzado"
+	}
+	.facturacion-section4-planes .avanzado,
+	.correo-section3-planes .avanzado,
+	.sitios-section3-planes .avanzado{
+		grid-column: 2/3;
+	}
+	.facturacion-section4-planes .negocio, 
+	.correo-section3-planes .negocio, 
+	.sitios-section3-planes .negocio{
+		grid-column: 1/3;
+		justify-self: center;
+	}
+
+	.header-facturacion{
+		max-width: 600px;
+	}
+	.contenido-header-facturacion h3{
+		font-size: 30px;
+	}
+	.contenido-header-facturacion h2{
+		font-size: 20px;
+	}
+	.facturacion-section1{
+		height: 500px;
+	}
+	.imagen-header-facturacion{
+		width: 350px;
+	}
+		.imagen-header-facturacion img{
+		top: -100px;
+	}
+	.facturacion-section2{
+		max-width: 600px;
+	}
+	.texto-main h2{
+		font-size: 30px;
+	}
+	.texto-main h3{
+		margin-bottom: 10px;
+	}
+	.section3 h2{
+		font-size: 20px;
+	}
+	.section3 img{
+		width: 40%;
+	}
+	.facturacion-section4-planes .plan.negocio{
+		grid-column: 2/3;
+	}
+	.facturacion-section4-planes .plan.avanzado{
+		grid-column: 1/3;
+		grid-row: 2/3;
+		justify-self: center;
+		max-width: 51%;
+	}
+}
+@media only screen and (max-width:600px){
+	.header-facturacion{
+		height: auto;
+	}
+	.facturacion-section4-planes,
+	.correo-section3-planes,
+	.sitios-section3-planes{
+		grid-template-columns: 1fr;
+		max-width: 400px;
+		min-width: 0;
+		margin-bottom: 30px;
+	}
+	.facturacion-section4-titulo h2:nth-child(2), 
+	.correo-section3-titulo h2:nth-child(2), 
+	.sitios-section3-titulo h2:nth-child(2){
+		font-size: 25px;
+	}
+	.facturacion-section4-titulo h2:nth-child(1), 
+	.correo-section3-titulo h2:nth-child(1),
+	.sitios-section3-titulo h2:nth-child(1){
+		font-size: 15px;
+	}
+
+	.contenido-header-facturacion h3{
+		font-size: 22px;
+	}
+	.contenido-header-facturacion h2{
+		font-size: 15px;
+		line-height: 25px;
+	}
+	.facturacion-section1{
+		height: 350px;
+	}
+	.imagen-header-facturacion{
+		width: 180px;
+		justify-self: center;
+	}
+		.imagen-header-facturacion img{
+		top: 50%;
+	}
+	.facturacion-section2{
+		max-width: 600px;
+		grid-gap: 0 10px;
+	}
+	.texto-main h2{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.texto-main h3{
+		margin-bottom: 8px;
+		font-size: 15px;
+	}
+	.section3 h2{
+		font-size: 15px;
+	}
+	.section3 img{
+		width: 40%;
+	}.facturacion-section3-titulo h2:nth-child(1){
+		font-size: 15px;
+	}.facturacion-section3-titulo h2:nth-child(2){
+		font-size: 22px;
+	}
+	.facturacion-section3-titulo{
+		max-width: 400px;
+	}.facturacion-section3-iconos{
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+		margin-top:0;
+	}.section3 h3{
+		font-size: 12px;
+	}
+.facturacion-section4-planes .plan.basico,
+.correo-section3-planes .plan.basico,
+.sitios-section3-planes .plan.basico{
+	grid-row:  1/2;
+	grid-column: 1/2;
+}.facturacion-section4-planes .plan.negocio,
+.correo-section3-planes .plan.negocio,
+.sitios-section3-planes .plan.negocio{
+	grid-row:  2/3;
+	grid-column: 1/2;
+}
+.facturacion-section4-planes .plan.avanzado,
+.correo-section3-planes .plan.avanzado,
+.sitios-section3-planes .plan.avanzado{
+	grid-row: 3/4;
+	grid-column: 1/2;
+	max-width: none;
+}
+}
+
+
+/*=====  End of Section comment block  ======*/
